@@ -737,7 +737,7 @@ background-color: #404bbf;
 }
 
 .person:focus +
-.img-form:hover {
+.img-form {
 fill: #4D5AE5;
 }
 
