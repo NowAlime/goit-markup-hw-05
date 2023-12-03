@@ -569,6 +569,11 @@ margin-left: 80px;
     border: none;
 }
 
+.button-input:hover,
+.button-input:focus {
+background-color: #404bbf;
+}
+
 .btn-icon-footer {
     margin-left: 16px;
 }
@@ -614,8 +619,12 @@ margin-left: 80px;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 111;
     background-color: rgba(46, 47, 66, 0.40);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .backdrop.is-open {
@@ -701,6 +710,8 @@ margin-left: 80px;
     letter-spacing: 0.04em;
     color: #8e8f99;
     }
+
+       
 .input-form-name {
     position: relative;
     margin-bottom: 8px;
@@ -726,6 +737,7 @@ margin-left: 80px;
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.img-form:focus,
 .img-form:active {
 border-color: #4D5AE5;
 fill: #4D5AE5;
@@ -740,6 +752,7 @@ fill: #4D5AE5;
     margin-bottom: 16px;
     width: 360px;
     height: 120px;
+    
     
 }
 .comment-textaria {
@@ -815,7 +828,7 @@ border-color: #4D5AE5;
     }
     
 .accent-color {
-    color: #4d5ae5;
+    color:#4D5AE5;
 }
 
 
@@ -823,6 +836,7 @@ border-color: #4D5AE5;
 .checkbox-input:checked
 + .checkbox-label
 > .checkbox-span {
+    outline: 0px transparent;
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -840,7 +854,7 @@ border-color: #4D5AE5;
 
 
 .send-button {
-    gap: 10px;
+   
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -862,10 +876,12 @@ border-color: #4D5AE5;
 }
 
 .send-button:hover {
+ 
     background-color: #404bbf;
     border: none;
 }
 .send-button:focus {
+    
     background-color: #404bbf;
     border: none;
 }
