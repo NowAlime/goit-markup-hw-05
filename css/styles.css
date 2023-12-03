@@ -739,11 +739,13 @@ background-color: #404bbf;
 .img-form:focus,
 .img-form:hover {
 fill: #4D5AE5;
+border-color: #4D5AE5;
 }
 
 .person:focus,
 .person:hover {
 fill: #4D5AE5;
+border-color: #4D5AE5;
 }
 .textaria-container {
     margin-bottom: 16px;
